@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Stock Ticker</title>
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+	</head>
+	<body>
+		<div class=page>
+  			<h1>User Input</h1>
+  			<div class=metanav>
+
+    			<h4>Please enter a stock ticker eg. GOOG, and check desired features.</h4>
+
+    			<form id='input' method='post' action='graph'>	
+	  			<p>
+                    <h4>Ticker symbol:</h4> 
+                    <input type='text' name='ticker' />
+                    <h4>Features:</h4>
+                    <input type="checkbox" name='open'>Opening Price<br>
+                    <input type="checkbox" name='close'>Closing price<br>
+					<input type="checkbox" name='high'>Daily High<br>
+                    <input type="checkbox" name='low'>Daily Low<br>
+                    <h4>Time Length:</h4>
+                    <input type="radio" name="period" value="1m"> 1 Month<br>
+                    <input type="radio" name="period" value="3m"> 3 Months<br>
+                    <input type="radio" name="period" value="6m"> 6 Months<br>
+                    <input type="radio" name="period" value="1y"> 1 Year<br>
+                    <input type="radio" name="period" value="2y"> 2 Years<br>
+                    <input type="radio" name="period" value="5y"> 5 Years<br>
+
+                    
+	    			<input type="submit" value="Submit">
+                </p>
+				</form>
+  			</div>
+		</div>
+	</body>
+</html>
